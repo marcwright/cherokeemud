@@ -4,7 +4,7 @@ export default function Jumbo() {
   return (
     <section className="jumbotron text-center">
       <div className="container">
-        <h1>Album example</h1>
+        <h1>Cherokee Mud</h1>
         <p className="lead text-muted">
           Something short and leading about the collection below—its contents,
           the creator, etc. Make it short and sweet, but not too short so folks

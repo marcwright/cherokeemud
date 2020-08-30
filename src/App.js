@@ -1,31 +1,21 @@
 import React from "react";
 import "./App.css";
 import { Alert } from "react-bootstrap";
+import Nav from "./Nav";
+import Footer from "./Footer";
+import Jumbo from "./Jumbo";
+import AlbumList from "./AlbumList";
 
 function App() {
-  const test = [
-    "primary",
-    "secondary",
-    "success",
-    "danger",
-    "warning",
-    "info",
-    "light",
-    "dark",
-  ].map((variant, idx) => (
-    <Alert key={idx} variant={variant}>
-      This is a {variant} alert—check it out!
-    </Alert>
-  ));
-
   return (
     <div className="App">
-      {test}
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
+      <Nav />
+
+      <main role="main">
+        <Jumbo />
+        <AlbumList />
+      </main>
+      {/* <Footer /> */}
     </div>
   );
 }
